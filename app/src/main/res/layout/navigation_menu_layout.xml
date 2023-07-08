@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigations"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:elevation="1dp">
+
+    <LinearLayout
+        android:id="@+id/navigation_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menu_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/border_rectangle_rm_bottom"
+            android:text="@string/home"
+            android:textColor="@color/khaki"
+            android:fontFamily="@font/poppins_bold"
+            android:textAllCaps="false"
+            />
+        <TextView
+            android:id="@+id/menu_tickets"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/border_rectangle_rm_bottom"
+            android:text="Tickets"
+            android:textColor="@color/khaki"
+            android:fontFamily="@font/poppins_bold"
+            android:textAllCaps="false"/>
+        <TextView
+            android:id="@+id/menu_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/border_rectangle_rm_bottom"
+            android:text="About Us"
+            android:textColor="@color/khaki"
+            android:fontFamily="@font/poppins_bold"
+            android:textAllCaps="false"
+            />
+        <TextView
+            android:id="@+id/menu_log_out"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/border_rectangle"
+            android:text="Log Out"
+            android:textColor="@color/khaki"
+            android:fontFamily="@font/poppins_bold"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigation_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/navigation_option"/>
+</RelativeLayout>

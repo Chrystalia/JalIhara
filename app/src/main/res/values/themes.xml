@@ -2,7 +2,17 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.JalIhara" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryDark">@color/darkBrown</item>
+        <item name="colorPrimary">@color/khaki</item>
+
+        <!-- Customize theme-->
+        <item name="itemTextAppearance">@style/navbar</item>
+    </style>
+
+    <style name="navbar"  parent="Base.Theme.JalIhara">
+        <item name="background">@color/khaki</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
     <style name="Theme.JalIhara" parent="Base.Theme.JalIhara" />
