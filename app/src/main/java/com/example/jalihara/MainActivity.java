@@ -15,11 +15,19 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView usernameTextView;
     private List<Item> itemList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // daniel
+        usernameTextView = findViewById(R.id.username_txt);
+
+        String username = ((UsernameGlobal) this.getApplication()).getUsername();
+        usernameTextView.setText(username);
+        // end daniel
 
         itemList = new ArrayList<>();
         itemList.add(new Item( R.drawable.ticket1, "⏱ 10-11 Maret 2023 ", "Jogja Violin Vest #4", "Start your 2023 by visiting the Jogja Violin Festival 2023, while supporting the revival of Indonesia's tourism and creative economy!✨", "IDR 10.000"));
