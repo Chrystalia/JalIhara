@@ -3,15 +3,15 @@ package com.example.jalihara;
 public class Item {
 
 
-//    private int itemIdx;
+    private String itemId;
     private int itemImage;
     private String itemDate;
     private String itemTitle;
     private String itemDescription;
     private String itemPrice;
 
-    public Item(int itemImage, String itemDate, String itemTitle, String itemDescription, String itemPrice) {
-//        this.itemIdx = itemIdx;
+    public Item(String itemId, int itemImage, String itemDate, String itemTitle, String itemDescription, String itemPrice) {
+        this.itemId =itemId;
         this.itemImage = itemImage;
         this.itemDate = itemDate;
         this.itemTitle = itemTitle;
@@ -19,13 +19,13 @@ public class Item {
         this.itemPrice = itemPrice;
     }
 
-//    public int getItemIdx() {
-//        return itemIdx;
-//    }
-//
-//    public void setItemIdx(int itemIdx) {
-//        this.itemIdx = itemIdx;
-//    }
+    public String getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(String itemId) {
+        this.itemId = itemId;
+    }
 
     public int getItemImage() {
         return itemImage;

@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
         // end daniel
 
         itemList = new ArrayList<>();
-        itemList.add(new Item( R.drawable.ticket1, "⏱ 10-11 Maret 2023 ", "Jogja Violin Vest #4", "Start your 2023 by visiting the Jogja Violin Festival 2023, while supporting the revival of Indonesia's tourism and creative economy!✨", "IDR 10.000"));
-        itemList.add(new Item( R.drawable.ticket2, "⏱ 1-3 September 2023", "SyncFest 2023", "Synchronize Festival brings local musicians from the 60s to the 2000s. Experience the nostalgic feelings by attending the festival and enjoying the music of the past decades.", "IDR 550.000"));
-        itemList.add(new Item( R.drawable.ticket3, "⏱ 19 September 2019", "SACF 2023", "SACF (Surabaya Art Cultural Festival), located at Surabaya City Square, starts at 6:00 PM WIB (Western Indonesian Time) and showcases various traditional and modern arts.", "IDR 5.000"));
-        itemList.add(new Item( R.drawable.ticket4, "⏱ 7 Agustus 2023", "Barong Performance", "Unlike common barong performances in the area, the antics of the comic reliefs  can be quite hilarious.", "IDR 150.000"));
-        itemList.add(new Item( R.drawable.ticket5, "⏱ 22-24 September 2023", "Pestapora 2023", "Tens of thousands of visitors, hundreds of guest stars, and various exciting activities provide a different experience for a music celebration.", "IDR 600.000"));
+        itemList.add(new Item("0", R.drawable.ticket1, "⏱ 10-11 Maret 2023 ", "Jogja Violin Vest #4", "Start your 2023 by visiting the Jogja Violin Festival 2023, while supporting the revival of Indonesia's tourism and creative economy!✨", "IDR 10.000"));
+        itemList.add(new Item("1", R.drawable.ticket2, "⏱ 1-3 September 2023", "SyncFest 2023", "Synchronize Festival brings local musicians from the 60s to the 2000s. Experience the nostalgic feelings by attending the festival and enjoying the music of the past decades.", "IDR 550.000"));
+        itemList.add(new Item("2", R.drawable.ticket3, "⏱ 19 September 2019", "SACF 2023", "SACF (Surabaya Art Cultural Festival), located at Surabaya City Square, starts at 6:00 PM WIB (Western Indonesian Time) and showcases various traditional and modern arts.", "IDR 5.000"));
+        itemList.add(new Item("3", R.drawable.ticket4, "⏱ 7 Agustus 2023", "Barong Performance", "Unlike common barong performances in the area, the antics of the comic reliefs  can be quite hilarious.", "IDR 150.000"));
+        itemList.add(new Item("4", R.drawable.ticket5, "⏱ 22-24 September 2023", "Pestapora 2023", "Tens of thousands of visitors, hundreds of guest stars, and various exciting activities provide a different experience for a music celebration.", "IDR 600.000"));
 
 
         // Navigation

@@ -22,9 +22,14 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         this.buttonClickListener = buttonClickListener;
     }
 
-    public void setFilteredList(List<Item> filteredList){
+    public void setFilteredList(List<Item> filteredList, ItemAdapter.buttonClickListener buttonClickListener){
         this.itemList = filteredList;
+        this.buttonClickListener = buttonClickListener;
         notifyDataSetChanged();
+    }
+
+    public List<Item> getItemList() {
+        return itemList;
     }
 
     @NonNull
@@ -49,10 +54,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         return itemList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         List<Item> itemList;
         ItemAdapter.buttonClickListener buttonClickListener;
-//        TextView itemIdx;
+        TextView itemId;
         ImageView itemImage;
         TextView itemDate;
         TextView itemTitle;
@@ -63,7 +68,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
         public ViewHolder(View view, ItemAdapter.buttonClickListener buttonClickListener) {
             super(view);
-//            itemIdx = view.findViewById(R.id.text_view_idx);
+            itemId = view.findViewById(R.id.text_view_id);
             itemImage = view.findViewById(R.id.image_icon);
             itemTitle = view.findViewById(R.id.text_view_title);
             itemDate = view.findViewById(R.id.text_view_date);
@@ -77,7 +82,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         }
 
         public void bind(Item item) {
-//            itemIdx.setText(item.getItemIdx());
+            itemId.setText(item.getItemId());
             itemImage.setImageResource(item.getItemImage());
             itemTitle.setText(item.getItemTitle());
             itemDate.setText(item.getItemDate());

@@ -101,7 +101,7 @@ public class TicketsActivity extends AppCompatActivity implements ItemAdapter.bu
 //            startActivity(intent);
 //        });
 
-
+        // Search Bar
         searchView = findViewById(R.id.search_view);
         searchView.clearFocus();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -116,7 +116,6 @@ public class TicketsActivity extends AppCompatActivity implements ItemAdapter.bu
                 return true;
             }
         });
-
 
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -137,15 +136,15 @@ public class TicketsActivity extends AppCompatActivity implements ItemAdapter.bu
         if(filteredList.isEmpty()){
             Toast.makeText(this, "No Data Found", Toast.LENGTH_SHORT).show();
         } else {
-            itemAdapter.setFilteredList(filteredList);
+            itemAdapter.setFilteredList(filteredList, this);
         }
     }
 
     @Override
     public void onButtonClick(int position) {
-//        int idx = TicketList.getInstance().getItemList().get(position).getItemIdx();
         Intent intent = new Intent(TicketsActivity.this, TicketFormActivity.class);
-        intent.putExtra("title", TicketList.getInstance().getItemList().get(position).getItemTitle());
+        String id =itemAdapter.getItemList().get(position).getItemId();
+        intent.putExtra("title", TicketList.getInstance().getItemList().get((Integer.parseInt(id))).getItemTitle());
         startActivity(intent);
     }
 }
