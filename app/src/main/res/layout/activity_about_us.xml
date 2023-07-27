@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".AboutUsActivity"
     android:orientation="vertical"
     android:background="?attr/colorPrimaryDark">
     <!--    android:background="?attr/colorPrimaryDark"-->
@@ -14,7 +14,13 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar_layout"/>
 
+    <include
+        android:id="@+id/navigation_menu"
+        layout="@layout/navigation_menu_layout"
+        android:visibility="gone"/>
+
     <LinearLayout
+        android:id="@+id/about_us_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:paddingVertical="5dp"

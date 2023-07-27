@@ -13,23 +13,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class  ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
-    private static ItemAdapter.buttonClickListener buttonClickListener;
+public class  ItemHomeAdapter extends RecyclerView.Adapter<ItemHomeAdapter.ViewHolder> {
+    private static ItemHomeAdapter.buttonClickListener buttonClickListener;
     private List<Item> itemList;
 
-    public ItemAdapter(List<Item> itemList, ItemAdapter.buttonClickListener buttonClickListener) {
+    public ItemHomeAdapter(List<Item> itemList, ItemHomeAdapter.buttonClickListener buttonClickListener) {
         this.itemList = itemList;
         this.buttonClickListener = buttonClickListener;
-    }
-
-    public ItemAdapter(List<Item> itemList) {
-        this.itemList = itemList;
-    }
-
-    public void setFilteredList(List<Item> filteredList, ItemAdapter.buttonClickListener buttonClickListener){
-        this.itemList = filteredList;
-        this.buttonClickListener = buttonClickListener;
-        notifyDataSetChanged();
     }
 
     public List<Item> getItemList() {
@@ -40,14 +30,14 @@ public class  ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(
-                R.layout.activity_tickets_view, parent, false);
+                R.layout.activity_home_ticket, parent, false);
 
         // Passing view to ViewHolder
-        return new ViewHolder(view, ItemAdapter.buttonClickListener);
+        return new ViewHolder(view, ItemHomeAdapter.buttonClickListener);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ItemHomeAdapter.ViewHolder holder, int position) {
         // TypeCast Object to int type
         Item item = itemList.get(position);
         holder.bind(item);
@@ -60,24 +50,18 @@ public class  ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         List<Item> itemList;
-        ItemAdapter.buttonClickListener buttonClickListener;
+        ItemHomeAdapter.buttonClickListener buttonClickListener;
         TextView itemId;
         ImageView itemImage;
-        TextView itemDate;
         TextView itemTitle;
-        TextView itemDescription;
-        TextView itemPrice;
         Button order_btn;
 
 
-        public ViewHolder(View view, ItemAdapter.buttonClickListener buttonClickListener) {
+        public ViewHolder(View view, ItemHomeAdapter.buttonClickListener buttonClickListener) {
             super(view);
             itemId = view.findViewById(R.id.text_view_id);
             itemImage = view.findViewById(R.id.image_icon);
             itemTitle = view.findViewById(R.id.text_view_title);
-            itemDate = view.findViewById(R.id.text_view_date);
-            itemDescription = view.findViewById(R.id.text_view_desc);
-            itemPrice = view.findViewById(R.id.text_view_price);
             order_btn = view.findViewById(R.id.order_btn);
 
             this.buttonClickListener = buttonClickListener;
@@ -89,10 +73,6 @@ public class  ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
             itemId.setText(item.getItemId());
             itemImage.setImageResource(item.getItemImage());
             itemTitle.setText(item.getItemTitle());
-            itemDate.setText(item.getItemDate());
-            itemDescription.setText(item.getItemDescription());
-            itemPrice.setText(item.getItemPrice());
-
 //            order_btn.setOnClickListener(new View.OnClickListener() {
 //                @Override
 //                public void onClick(View v) {

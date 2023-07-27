@@ -20,6 +20,7 @@ import java.util.List;
 
 public class TicketsActivity extends AppCompatActivity implements ItemAdapter.buttonClickListener{
 
+    TextView header;
     RecyclerView recyclerView;
     ItemAdapter itemAdapter;
     SearchView searchView;
@@ -30,6 +31,10 @@ public class TicketsActivity extends AppCompatActivity implements ItemAdapter.bu
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tickets);
+
+        header = findViewById(R.id.title);
+        String username = ((UsernameGlobal) this.getApplication()).getUsername();
+        header.setText("Events");
 
         // Navigation
         View toolbar = findViewById(R.id.toolbar);
@@ -84,10 +89,10 @@ public class TicketsActivity extends AppCompatActivity implements ItemAdapter.bu
         TextView tickets_btn = findViewById(R.id.menu_tickets);
         TextView about_us_btn = findViewById(R.id.menu_about_us);
         TextView log_out_btn = findViewById(R.id.menu_log_out);
-//        home_btn.setOnClickListener(v -> {
-//            Intent intent = new Intent(MainActivity.this, TicketsActivity.class);
-//            startActivity(intent);
-//        });
+        home_btn.setOnClickListener(v -> {
+            Intent intent = new Intent(TicketsActivity.this, MainActivity.class);
+            startActivity(intent);
+        });
         tickets_btn.setOnClickListener(v -> {
             Intent intent = new Intent(TicketsActivity.this, TicketsActivity.class);
             startActivity(intent);
@@ -96,10 +101,10 @@ public class TicketsActivity extends AppCompatActivity implements ItemAdapter.bu
             Intent intent = new Intent(TicketsActivity.this, AboutUsActivity.class);
             startActivity(intent);
         });
-//        log_out_btn.setOnClickListener(v -> {
-//            Intent intent = new Intent(MainActivity.this, TicketFormActivity.class);
-//            startActivity(intent);
-//        });
+        log_out_btn.setOnClickListener(v -> {
+            Intent intent = new Intent(TicketsActivity.this, LoginActivity.class);
+            startActivity(intent);
+        });
 
         // Search Bar
         searchView = findViewById(R.id.search_view);
