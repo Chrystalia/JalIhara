@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Layer List for Inactive State -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:state_selected="false">
+        <layer-list>
+            <!-- Inactive Tab Background -->
+            <item android:left="20dp" android:top="2dp" android:bottom="4dp" android:right="20dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#40D2C28D" />
+                    <stroke android:color="#2C252D" android:width="2dp"/>
+                    <corners android:radius="30dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Layer List for Active State -->
+    <item android:state_pressed="false" android:state_selected="true">
+        <layer-list>
+            <!-- Active Tab Background -->
+            <item android:left="20dp" android:top="2dp" android:bottom="2dp" android:right="20dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#D2C28D" />
+                    <stroke android:color="#2C252D" android:width="2dp"/>
+                    <corners android:radius="20dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

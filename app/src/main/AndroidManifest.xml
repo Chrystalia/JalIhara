@@ -14,6 +14,9 @@
         android:theme="@style/Theme.JalIhara"
         tools:targetApi="31">
         <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity
             android:name=".TicketFormActivity"
             android:exported="false" />
         <activity

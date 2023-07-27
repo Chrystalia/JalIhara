@@ -92,10 +92,10 @@ public class TicketsActivity extends AppCompatActivity implements ItemAdapter.bu
             Intent intent = new Intent(TicketsActivity.this, TicketsActivity.class);
             startActivity(intent);
         });
-//        about_us_btn.setOnClickListener(v -> {
-//            Intent intent = new Intent(MainActivity.this, TicketFormActivity.class);
-//            startActivity(intent);
-//        });
+        about_us_btn.setOnClickListener(v -> {
+            Intent intent = new Intent(TicketsActivity.this, AboutUsActivity.class);
+            startActivity(intent);
+        });
 //        log_out_btn.setOnClickListener(v -> {
 //            Intent intent = new Intent(MainActivity.this, TicketFormActivity.class);
 //            startActivity(intent);
