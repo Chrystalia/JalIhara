@@ -8,6 +8,7 @@
     <string name="price">price</string>
     <string name="date">date</string>
     <string name="order_now">Order Now</string>
+    <string name="view_details">View Details</string>
     <string name="ticket_image">ticket_image</string>
     <string name="option_1">Early Bird</string>
     <string name="option_2">General</string>

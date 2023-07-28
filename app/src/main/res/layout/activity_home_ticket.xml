@@ -73,7 +73,7 @@
                         android:layout_height="wrap_content"
                         android:insetBottom="5dp"
                         app:backgroundTint = "@color/darkBrown"
-                        android:text="@string/order_now"
+                        android:text="@string/view_details"
                         android:fontFamily="@font/poppins_regular"
                         android:textSize="12sp"
                         android:textColor="@color/white" />
