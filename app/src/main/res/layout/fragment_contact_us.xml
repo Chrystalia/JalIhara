@@ -28,7 +28,8 @@ tools:context=".ContactUs">
                     android:layout_height="match_parent"
                     android:text="Rumah Talenta BCA"
                     android:textAlignment="center"
-                    android:textSize="15dp" />
+                    android:textSize="15dp"
+                    android:fontFamily="@font/poppins_regular"/>
 
         </LinearLayout>
 
@@ -50,7 +51,8 @@ tools:context=".ContactUs">
                     android:layout_height="match_parent"
                     android:text="Jailnahara!"
                     android:textAlignment="center"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp"
+                    android:fontFamily="@font/poppins_regular"/>
 
         </LinearLayout>
 
@@ -72,7 +74,8 @@ tools:context=".ContactUs">
                     android:layout_height="match_parent"
                     android:text="+628123456789"
                     android:textAlignment="center"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp"
+                    android:fontFamily="@font/poppins_regular"/>
 
         </LinearLayout>
 
