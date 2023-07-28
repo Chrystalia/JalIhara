@@ -17,7 +17,7 @@ import com.google.android.material.tabs.TabLayout;
 
 import java.util.List;
 
-public class AboutUsActivity extends AppCompatActivity {
+public class AboutUsActivity extends AppCompatActivity{
 
     TextView header;
     TabLayout tabLayoutAboutUs;
@@ -135,8 +135,7 @@ public class AboutUsActivity extends AppCompatActivity {
             }
         });
 
-
-        movePage.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+        movePage.registerOnPageChangeCallback(new    ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
