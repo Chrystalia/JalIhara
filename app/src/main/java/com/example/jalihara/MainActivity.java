@@ -141,11 +141,11 @@ public class MainActivity extends AppCompatActivity implements ItemAdapter.butto
         imageView.setBackgroundResource(images);
 
         viewFlipper.addView(imageView);
-        viewFlipper.setFlipInterval(1000);
+//        viewFlipper.setFlipInterval(1000);
         viewFlipper.setAutoStart(true);
 
-        viewFlipper.setInAnimation(this,android.R.anim.slide_in_left);
-        viewFlipper.setOutAnimation(this,android.R.anim.slide_out_right);
+        viewFlipper.setInAnimation(this,R.anim.slide_in_right);
+        viewFlipper.setOutAnimation(this,R.anim.slide_out_left);
 
     }
 

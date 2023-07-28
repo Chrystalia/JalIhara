@@ -147,7 +147,8 @@
             android:text="What Makes Us Special Agency?"
             android:maxLines="2"
             android:textAlignment="center"
-            android:gravity="bottom"/>
+            android:gravity="bottom"
+            android:fontFamily="@font/poppins_bold"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -155,7 +156,8 @@
             android:layout_marginHorizontal="25dp"
             android:textSize="12dp"
             android:text="The event ticketing company has special features that differentiate it from conventional ticket providers. These features help the event ticketing company provide the best service to their customers and ensure that every attended event runs smoothly and successfully."
-            android:gravity="center"/>
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"/>
 
         <View
             android:layout_marginVertical="10dp"
@@ -182,14 +184,16 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:text="Easy Payment"/>
+                android:text="Easy Payment"
+                android:fontFamily="@font/poppins_bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:gravity="center"
-                android:text="The event ticketing company provides various easy and secure payment methods, such as credit cards, bank transfers, e-wallets, and payment through their partner outlets. The event ticketing company provides various easy and secure payment methods, such as credit cards, bank transfers, e-wallets, and payment through their partner outlets. "/>
+                android:text="The event ticketing company provides various easy and secure payment methods, such as credit cards, bank transfers, e-wallets, and payment through their partner outlets. The event ticketing company provides various easy and secure payment methods, such as credit cards, bank transfers, e-wallets, and payment through their partner outlets. "
+                android:fontFamily="@font/poppins_regular"/>
 
         </LinearLayout>
 
@@ -213,13 +217,15 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:text="Ticket Delivery"/>
+                android:text="Ticket Delivery"
+                android:fontFamily="@font/poppins_bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
                 android:text="The event ticketing company provides the option of delivering tickets directly to the customer's address, so customers do not have to bother picking up tickets at the ticket sales location."/>
         </LinearLayout>
 
@@ -243,13 +249,15 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:text="Online Booking System"/>
+                android:text="Online Booking System"
+                android:fontFamily="@font/poppins_bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
                 android:text="The event ticketing company provides an easy-to-use online ticket booking system that can be accessed from anywhere.The event ticketing company provides an easy-to-use online ticket booking system that can be accessed from anywhere."/>
         </LinearLayout>
 
@@ -273,13 +281,15 @@
             android:textSize="24dp"
             android:textStyle="bold"
             android:gravity="center"
-            android:text="Customer Service"/>
+            android:text="Customer Service"
+            android:fontFamily="@font/poppins_bold"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="12dp"
             android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
             android:text="The event ticketing company provides responsive and trained customer service to help customers solve any issues or questions they may have. This service is available by phone, email, or live chat and can help customers quickly and effectively."/>
 
     </LinearLayout>
@@ -300,7 +310,8 @@
         android:text="Our Team"
         android:maxLines="2"
         android:textAlignment="center"
-        android:gravity="bottom"/>
+        android:gravity="bottom"
+        android:fontFamily="@font/poppins_bold"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -332,7 +343,8 @@
                     android:layout_height="40dp"
                     android:text="Chrystalia Glenys Winata Ang"
                     android:textAlignment="center"
-                    android:textSize="14dp"/>
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppins_regular"/>
 
 
             </LinearLayout>
@@ -362,7 +374,8 @@
                     android:layout_height="40dp"
                     android:text="Daniel Zerge Wijaya"
                     android:textAlignment="center"
-                    android:textSize="14dp"/>
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppins_regular"/>
 
 
             </LinearLayout>
@@ -393,7 +406,8 @@
                     android:layout_height="40dp"
                     android:text="Nadya Clarine Purba"
                     android:textAlignment="center"
-                    android:textSize="14dp"/>
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppins_regular"/>
 
 
             </LinearLayout>
