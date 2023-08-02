@@ -59,7 +59,7 @@ public class TicketFormActivity extends AppCompatActivity {
                 // the boolean variable turns to be true then
                 // only the user must be proceed to the activity2
                 if (isAllFieldsChecked) {
-                    Intent i = new Intent(TicketFormActivity.this, TicketsActivity.class);
+                    Intent i = new Intent(TicketFormActivity.this, MainActivity.class);
                     startActivity(i);
                 }
             }

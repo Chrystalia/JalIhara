@@ -43,9 +43,9 @@ public class LoginActivity extends AppCompatActivity {
             } else if (username.length() <= 5) {
                 errorTextView.setVisibility(View.VISIBLE);
                 errorTextView.setText("username must be more then 5 characters");
-            } else if (password.length() <= 5) {
+            } else if (password.length() <= 8) {
                 errorTextView.setVisibility(View.VISIBLE);
-                errorTextView.setText("password must be more than 5 characters");
+                errorTextView.setText("password must be more than 8 characters");
             } else {
                 ((UsernameGlobal) this.getApplication()).setUsername(username);
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));

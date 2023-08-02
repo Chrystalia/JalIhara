@@ -38,9 +38,7 @@ public class MainActivity extends AppCompatActivity implements ItemAdapter.butto
         int image[] = {R.drawable.slideone, R.drawable.slidetwo, R.drawable.slidethree};
 
         viewFlipper = findViewById(R.id.viewFlipperHome);
-//        for(int i = 0; i < image.length; i++){
-//            flipperImages(image[i]);
-//        }
+
         for(int images: image){
             flipperImages(images);
         }
@@ -141,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements ItemAdapter.butto
         imageView.setBackgroundResource(images);
 
         viewFlipper.addView(imageView);
-//        viewFlipper.setFlipInterval(1000);
+        viewFlipper.setFlipInterval(1000);
         viewFlipper.setAutoStart(true);
 
         viewFlipper.setInAnimation(this,R.anim.slide_in_right);

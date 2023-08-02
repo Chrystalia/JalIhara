@@ -135,7 +135,7 @@ public class AboutUsActivity extends AppCompatActivity{
             }
         });
 
-        movePage.registerOnPageChangeCallback(new    ViewPager2.OnPageChangeCallback() {
+        movePage.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
